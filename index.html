@@ -10,6 +10,7 @@
 <body>
     <header>
         <nav class="navigation">
+            <logo id="logo">JC</logo>
             <ul class="nav-items">
                 <li>About</li>
                 <li>Projects</li>
@@ -17,15 +18,39 @@
             </ul>
         </nav>
     </header>
+    <div class="hero">
+        <p>Hello, my name is <span>Jeremy Clemence</span>.</p>
+        <p>I am a front-end developer.</p>
+    </div>
     <section class="about">
-        <h1>Jeremy Clemence</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime rem provident velit id recusandae qui repellat consequuntur dolore, libero ab? Voluptas aperiam voluptates veniam quos, provident illum ratione at vitae?</p>
+        <h1>About</h1>
     </section>
     <section class="projects">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam dignissimos labore accusamus a culpa harum nam error exercitationem consequuntur facere similique eaque at corrupti deserunt aperiam, vel quia magni quod!
+        <h1>Projects</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam dignissimos labore accusamus a culpa harum nam error exercitationem consequuntur facere similique eaque at corrupti deserunt aperiam, vel quia magni quod!</p>
+        <div class="card text-left">
+          <img style="width: 100px; height: 100px;"class="card-img-top" src="background.jpeg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">First Project</h4>
+            <p class="card-text">Body</p>
+          </div>
+        </div>
+        <div class="card text-left">
+            <img style="width: 100px; height: 100px;"class="card-img-top" src="background.jpeg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Second Project</h4>
+              <p class="card-text">Body</p>
+            </div>
+          </div>
     </section>
     <section class="contact">
-        <h1>Contact Me</h1>
+        <h1 class="contact-heading">Contact Me</h1>
+        <form class="contact-form" id="contact" method="post" name="contact">
+            <input id="contact" type="text" name="name" placeholder="Name">
+            <input id="contact" type="email" name="email" placeholder="Email">
+            <textarea id="contact" name="message" rows="10" placeholder="Message"></textarea>
+            <button class="contact-button" type="submit">Send</button>
+        </form>
     </section>
 
     <script src="script.js"></script>
